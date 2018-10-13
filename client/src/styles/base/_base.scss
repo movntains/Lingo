@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: $bg-fallback;
+  background: $bg-gradient;
+  font-family: $font-main;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  margin-top: 3em;
+  padding: 0 9.375em;
+}

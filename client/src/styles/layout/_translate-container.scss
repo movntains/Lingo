@@ -1,0 +1,12 @@
+.translate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-translation;
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: $box-shadow;
+}
