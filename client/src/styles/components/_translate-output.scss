@@ -1,0 +1,11 @@
+.translate-output {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  width: 90%;
+  margin-top: 2em;
+  height: 200px;
+  padding: 0 1em;
+  background-color: lighten($color: $bg-translation, $amount: 10%);
+  border-radius: 0.5em;
+  color: $hero-text;
+}

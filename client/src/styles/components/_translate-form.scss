@@ -1,0 +1,51 @@
+.translate-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-bottom: 1px solid $placeholder-text;
+}
+
+form {
+  width: 100%;
+}
+
+.translate-input {
+  width: 100%;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid $translate-accent;
+  font-size: 1.125em;
+  color: $hero-text;
+  caret-color: $translate-accent;
+}
+
+input::placeholder {
+  color: $placeholder-text;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.translate-btn {
+  cursor: pointer;
+  display: block;
+  width: 50%;
+  margin: 0 auto 1.5em auto;
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+  background-color: $translate-accent;
+  color: $hero-text;
+  font-size: 1em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken($color: $translate-accent, $amount: 10%);
+  }
+}

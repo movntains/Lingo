@@ -6,7 +6,7 @@ class Hero extends Component {
       <div className="hero">
         <h1>Lingo</h1>
         <p>
-          Enter a word or phrase in English, and then choose the language to which you want it to be translated.
+          Enter a word or phrase, and then choose the language to which you want it to be translated.
         </p>
       </div>
     );
