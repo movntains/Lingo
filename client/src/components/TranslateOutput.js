@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class TranslateOutput extends Component {
   render() {
@@ -11,5 +12,9 @@ class TranslateOutput extends Component {
     );
   }
 }
+
+TranslateOutput.propTypes = {
+  output: PropTypes.string
+};
 
 export default TranslateOutput;

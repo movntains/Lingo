@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class TranslateForm extends Component {
   constructor(props) {
@@ -66,5 +67,9 @@ class TranslateForm extends Component {
     );
   }
 }
+
+TranslateForm.propTypes = {
+  onTextChange: PropTypes.func
+};
 
 export default TranslateForm;
