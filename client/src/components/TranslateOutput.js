@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 class TranslateOutput extends Component {
   render() {
+    const { output } = this.props;
+
     return (
       <div className="translate-output">
-        <p>Translated text here.</p>
+        <p>{output}</p>
       </div>
     );
   }

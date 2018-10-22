@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import Dropdown from 'react-dropdown';
 
-const options = [
-  'Spanish',
-  'Russian'
-];
+const options = ['Chinese', 'French', 'Russian', 'Spanish'];
 
 class LanguageDropdown extends Component {
   constructor(props) {
@@ -19,17 +16,19 @@ class LanguageDropdown extends Component {
 
   _onSelect(option) {
     this.setState({ selected: option });
+    console.log(this.state.selected);
+    // this.props.setLanguage(selected);
   }
 
   render() {
-    const defaultOption = this.state.selected;
+    const { selected } = this.state;
 
     return (
       <div>
         <Dropdown
           options={options}
+          value={selected}
           onChange={this._onSelect}
-          value={defaultOption}
         />
       </div>
     );
